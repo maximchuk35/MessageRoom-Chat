@@ -13,13 +13,13 @@
 
 <div class="container clearfix">
     <div class="people-list" id="people-list">
-        
+
         <ul class="list">
             <li class="clearfix">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01.jpg" alt="avatar" />
                 <div class="about">
 
-                    <i class="table-secondary"></i> &nbsp; Voice Room
+                    <i class="table-secondary"></i> &nbsp; Chat Widget
                     <i class="fa fa-star"></i>
                     <div class="status">
                         <i class="fa fa-circle online"></i> online
@@ -47,16 +47,16 @@
                 </form>
 
             </nav>
-           
+
 
 
         </div> <!-- end chat-header -->
 
         <div class="chat-history">
-            
+
 
             <div class="jumbotron bg-light">
-               
+
 
                 <div class="row">
                     <div class="col-md-12" id="chat">
@@ -138,12 +138,8 @@
 
 @section scripts {
     <script src="~/signalr/signalr.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.unobtrusive-ajax.min.js"></script>
     <script src="~/js/chat.js"></script>
     <script src="~/js/signalrReqHandler.js"></script>
-    <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-
-
-
 }
 
