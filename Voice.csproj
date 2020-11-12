@@ -8,12 +8,10 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\css2\style.css" />
-    <Content Remove="wwwroot\js2\script.js" />
   </ItemGroup>
   
   <ItemGroup>
     <None Include="wwwroot\css2\style.css" />
-    <None Include="wwwroot\js2\script.js" />
     <None Include="wwwroot\js\chat.js" />
     <None Include="wwwroot\js\signrReqHandler.js" />
     <None Include="wwwroot\js\site.js" />
