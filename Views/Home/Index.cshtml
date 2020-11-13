@@ -16,7 +16,7 @@
 
         <ul class="list">
             <li class="clearfix">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01.jpg" alt="avatar" />
+                <img src="https://zachet24.ru/wp-content/uploads/2017/09/default.png" alt="avatar" />
                 <div class="about">
 
                     <i class="table-secondary"></i> &nbsp; Chat Widget
@@ -31,9 +31,18 @@
     </div>
 
     <div class="chat">
-
+    
         <div class="chat-header clearfix">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01_green.jpg" alt="avatar" />
+
+            @if (userName == "maximchuk@gmail.com")
+            {
+                    <img src="~/chat_avatar_01_green.jpg" />
+            }
+            else
+            {
+                    <img src="~/chat_avatar_02_green.jpg" />
+            }
+        
 
             <nav class="navbar navbar-inverse">
 
@@ -88,6 +97,9 @@
 
                                             <p class="sender @textAlign">@message.UserName</p>
                                             <p class="@textAlign">@message.Text</p>
+
+                
+
                                             <span class="@timePosition">@message.When.ToString("d/MM/yyyy H:mm tt")</span>
                                         </div>
                                     </div>
